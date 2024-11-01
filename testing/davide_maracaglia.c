@@ -21,22 +21,22 @@ int main()
         return 0;
     }
     if ( a == b && b == c ){
-        printf("il triangolo è equilatero ! ");
+        printf("il triangolo e' equilatero ! ");
     }
     else if ( a == b || b == c || c == a){
-        printf("il triangolo è isoscele \n");
+        printf("il triangolo e' isoscele \n");
     }
     else if ( a!=b && b!=c && c!=a ){
-        printf("il triangolo è scaleno \n");
+        printf("il triangolo e' scaleno \n");
     }
 
     if ((a*a == b*b + c*c) 
             ||  (b*b == a*a + c*c) 
             ||  (c*c == a*a + b*b)){
-        printf("il triangolo è rettangolo \n");
+        printf("il triangolo e' rettangolo \n");
     }
     else  {
-        printf("il triangolo non è rettangolo \n"); 
+        printf("il triangolo non e' rettangolo \n"); 
     }
 return 0;
 }
