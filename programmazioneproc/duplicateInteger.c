@@ -1,19 +1,33 @@
 #include <stdio.h>
 
 //void sort(int numbers[]);
-
-int main(){
-    int i;
-    int numbers[i]={};
-    printf("Insert the number of the elements inside the array: ");
-    scanf("%d", &i);
-    printf("ecco i: %d\n", i);
-    printf("\nNow insert the elements of the array");
-    for (int x=0; x < i ; x++){
-        printf("\ninsert the number: ");
-        scanf("%d", &numbers[x]);
-        printf("elemento inserito adesso lol: %d\n", numbers[x]);
+void initialize(int* arr, int size)
+{
+    for (int i = 0; i < size; i++) {
+        arr[i] = i + 1;
     }
+}
+
+// function to print an array
+void printArray(int size)
+{
+    // variable length array
+    int arr[size];
+    initialize(arr, size);
+
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+}
+
+// driver code
+int main()
+{
+    int n;
+    printf("Enter the Size: ");
+    scanf("%d", &n);
+    printArray(n);
+
     return 0;
 }
 
