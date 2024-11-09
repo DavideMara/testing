@@ -27,6 +27,7 @@ int main()
     printf("Enter the Size: ");
     scanf("%d", &n);
     printArray(n);
+    printf("ciao");
 
     return 0;
 }
