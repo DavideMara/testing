@@ -19,7 +19,7 @@ void vigenereCipher(const char *text, const char *key, char *output, char matrix
 
     for (int i = 0; i < textLen; i++) {
         if (isalpha(text[i])) {
-            int textChar = tolower(text[i]) -   'a';
+            int textChar = tolower(text[i]) - 'a';
             int keyChar = tolower(key[keyIndex % keyLen]) - 'a';
             output[i] = matrix[textChar][keyChar]; 
             keyIndex++;
